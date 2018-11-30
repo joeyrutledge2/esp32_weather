@@ -33,7 +33,7 @@ int sensorPin = A13;    // select the input pin for the potentiometer
 int ledPin = 13;      // select the pin for the LED
 float sensorValue = 0.00;  // variable to store the value coming from the sensor
 float voltage = 0.00;
-const char carbonHost[] = "grafana.joeyrutledge.com";
+const char carbonHost[] = "imnottellingyou.someinstance.com";
 unsigned int carbonPort = 2003;
 
 time_t prevDisplay = 0; // when the digital clock was displayed
@@ -60,10 +60,8 @@ void print_wakeup_reason(){
 
 
 void setup() {
-  //wifiMulti.addAP("j-vmware", "hellomynameisjoeyrutledge");
-  //wifiMulti.addAP("j-vmware");
-  //wifiMulti.addAP("i see you", "h1H3nma$@R$@#hhh23mv@");
-  wifiMulti.addAP("Joey", "hellomynameisjoey");
+  wifiMulti.addAP("j-vmware", "thisisnotreallythepassword");
+  wifiMulti.addAP("j-vmware");
 
   Serial.begin(9600);
   delay(1000);
